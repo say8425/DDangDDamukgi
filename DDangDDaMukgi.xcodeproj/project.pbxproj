@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2441B91018FD174200867CA3 /* BakImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 2441B90F18FD174200867CA3 /* BakImage.png */; };
+		24463F9A19110BDC007EB77C /* player.png in Resources */ = {isa = PBXBuildFile; fileRef = 24463F9919110BDC007EB77C /* player.png */; };
+		24463FB219111754007EB77C /* touchCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 24463FB119111754007EB77C /* touchCircle.png */; };
 		244BAB4318FA9BC0005AE1C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 244BAB4218FA9BC0005AE1C9 /* Foundation.framework */; };
 		244BAB4518FA9BC0005AE1C9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 244BAB4418FA9BC0005AE1C9 /* CoreGraphics.framework */; };
 		244BAB4718FA9BC0005AE1C9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 244BAB4618FA9BC0005AE1C9 /* UIKit.framework */; };
@@ -16,14 +19,18 @@
 		244BAB5518FA9BC0005AE1C9 /* DDangDDaMukgiAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 244BAB5418FA9BC0005AE1C9 /* DDangDDaMukgiAppDelegate.m */; };
 		244BAB5818FA9BC0005AE1C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 244BAB5618FA9BC0005AE1C9 /* Main.storyboard */; };
 		244BAB5B18FA9BC0005AE1C9 /* DDangDDaMukgiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 244BAB5A18FA9BC0005AE1C9 /* DDangDDaMukgiViewController.m */; };
-		244BAB5E18FA9BC0005AE1C9 /* DDangDDaMukgiMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 244BAB5D18FA9BC0005AE1C9 /* DDangDDaMukgiMyScene.m */; };
-		244BAB6018FA9BC0005AE1C9 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 244BAB5F18FA9BC0005AE1C9 /* Spaceship.png */; };
 		244BAB6218FA9BC0005AE1C9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 244BAB6118FA9BC0005AE1C9 /* Images.xcassets */; };
 		244BAB6918FA9BC0005AE1C9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 244BAB6818FA9BC0005AE1C9 /* XCTest.framework */; };
 		244BAB6A18FA9BC0005AE1C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 244BAB4218FA9BC0005AE1C9 /* Foundation.framework */; };
 		244BAB6B18FA9BC0005AE1C9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 244BAB4618FA9BC0005AE1C9 /* UIKit.framework */; };
 		244BAB7318FA9BC0005AE1C9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 244BAB7118FA9BC0005AE1C9 /* InfoPlist.strings */; };
 		244BAB7518FA9BC0005AE1C9 /* DDangDDaMukgiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 244BAB7418FA9BC0005AE1C9 /* DDangDDaMukgiTests.m */; };
+		24506C721909380A00584FD7 /* PlayScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 24506C711909380A00584FD7 /* PlayScene.m */; };
+		24A0ADCF190BE23D0018CC65 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A0ADCE190BE23D0018CC65 /* Player.m */; };
+		24E0D31C18FBFF1700C26B9B /* MainMenuScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E0D31B18FBFF1700C26B9B /* MainMenuScene.m */; };
+		24E0D32118FC0B3300C26B9B /* touchPTK.sks in Resources */ = {isa = PBXBuildFile; fileRef = 24E0D31F18FC0B3300C26B9B /* touchPTK.sks */; };
+		24E0D32218FC0B3300C26B9B /* touchCircle_.png in Resources */ = {isa = PBXBuildFile; fileRef = 24E0D32018FC0B3300C26B9B /* touchCircle_.png */; };
+		24EDA891191959D9004EFE8F /* Bounder.m in Sources */ = {isa = PBXBuildFile; fileRef = 24EDA890191959D9004EFE8F /* Bounder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +44,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2441B90F18FD174200867CA3 /* BakImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BakImage.png; sourceTree = "<group>"; };
+		24463F98191104D4007EB77C /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		24463F9919110BDC007EB77C /* player.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player.png; sourceTree = "<group>"; };
+		24463FB119111754007EB77C /* touchCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = touchCircle.png; sourceTree = "<group>"; };
 		244BAB3F18FA9BC0005AE1C9 /* DDangDDaMukgi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DDangDDaMukgi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		244BAB4218FA9BC0005AE1C9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		244BAB4418FA9BC0005AE1C9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -51,15 +62,22 @@
 		244BAB5718FA9BC0005AE1C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		244BAB5918FA9BC0005AE1C9 /* DDangDDaMukgiViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDangDDaMukgiViewController.h; sourceTree = "<group>"; };
 		244BAB5A18FA9BC0005AE1C9 /* DDangDDaMukgiViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDangDDaMukgiViewController.m; sourceTree = "<group>"; };
-		244BAB5C18FA9BC0005AE1C9 /* DDangDDaMukgiMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDangDDaMukgiMyScene.h; sourceTree = "<group>"; };
-		244BAB5D18FA9BC0005AE1C9 /* DDangDDaMukgiMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDangDDaMukgiMyScene.m; sourceTree = "<group>"; };
-		244BAB5F18FA9BC0005AE1C9 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		244BAB6118FA9BC0005AE1C9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		244BAB6718FA9BC0005AE1C9 /* DDangDDaMukgiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DDangDDaMukgiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		244BAB6818FA9BC0005AE1C9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		244BAB7018FA9BC0005AE1C9 /* DDangDDaMukgiTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DDangDDaMukgiTests-Info.plist"; sourceTree = "<group>"; };
 		244BAB7218FA9BC0005AE1C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		244BAB7418FA9BC0005AE1C9 /* DDangDDaMukgiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDangDDaMukgiTests.m; sourceTree = "<group>"; };
+		24506C701909380A00584FD7 /* PlayScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayScene.h; sourceTree = "<group>"; };
+		24506C711909380A00584FD7 /* PlayScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayScene.m; sourceTree = "<group>"; };
+		24A0ADCD190BE23D0018CC65 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		24A0ADCE190BE23D0018CC65 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		24E0D31A18FBFF1700C26B9B /* MainMenuScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuScene.h; sourceTree = "<group>"; };
+		24E0D31B18FBFF1700C26B9B /* MainMenuScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuScene.m; sourceTree = "<group>"; };
+		24E0D31F18FC0B3300C26B9B /* touchPTK.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = touchPTK.sks; sourceTree = "<group>"; };
+		24E0D32018FC0B3300C26B9B /* touchCircle_.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = touchCircle_.png; sourceTree = "<group>"; };
+		24EDA88F191959D9004EFE8F /* Bounder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bounder.h; sourceTree = "<group>"; };
+		24EDA890191959D9004EFE8F /* Bounder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bounder.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,15 +139,14 @@
 		244BAB4A18FA9BC0005AE1C9 /* DDangDDaMukgi */ = {
 			isa = PBXGroup;
 			children = (
+				24EDA88E191953E4004EFE8F /* Unit */,
+				24463F98191104D4007EB77C /* config.h */,
+				24E0D31E18FC0AF900C26B9B /* ImageRES */,
+				24E0D31D18FC0AD100C26B9B /* Scene */,
 				244BAB5318FA9BC0005AE1C9 /* DDangDDaMukgiAppDelegate.h */,
 				244BAB5418FA9BC0005AE1C9 /* DDangDDaMukgiAppDelegate.m */,
-				244BAB5618FA9BC0005AE1C9 /* Main.storyboard */,
 				244BAB5918FA9BC0005AE1C9 /* DDangDDaMukgiViewController.h */,
 				244BAB5A18FA9BC0005AE1C9 /* DDangDDaMukgiViewController.m */,
-				244BAB5C18FA9BC0005AE1C9 /* DDangDDaMukgiMyScene.h */,
-				244BAB5D18FA9BC0005AE1C9 /* DDangDDaMukgiMyScene.m */,
-				244BAB5F18FA9BC0005AE1C9 /* Spaceship.png */,
-				244BAB6118FA9BC0005AE1C9 /* Images.xcassets */,
 				244BAB4B18FA9BC0005AE1C9 /* Supporting Files */,
 			);
 			path = DDangDDaMukgi;
@@ -138,6 +155,8 @@
 		244BAB4B18FA9BC0005AE1C9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				244BAB6118FA9BC0005AE1C9 /* Images.xcassets */,
+				244BAB5618FA9BC0005AE1C9 /* Main.storyboard */,
 				244BAB4C18FA9BC0005AE1C9 /* DDangDDaMukgi-Info.plist */,
 				244BAB4D18FA9BC0005AE1C9 /* InfoPlist.strings */,
 				244BAB5018FA9BC0005AE1C9 /* main.m */,
@@ -162,6 +181,40 @@
 				244BAB7118FA9BC0005AE1C9 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		24E0D31D18FC0AD100C26B9B /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				24E0D31A18FBFF1700C26B9B /* MainMenuScene.h */,
+				24E0D31B18FBFF1700C26B9B /* MainMenuScene.m */,
+				24506C701909380A00584FD7 /* PlayScene.h */,
+				24506C711909380A00584FD7 /* PlayScene.m */,
+			);
+			name = Scene;
+			sourceTree = "<group>";
+		};
+		24E0D31E18FC0AF900C26B9B /* ImageRES */ = {
+			isa = PBXGroup;
+			children = (
+				24463F9919110BDC007EB77C /* player.png */,
+				2441B90F18FD174200867CA3 /* BakImage.png */,
+				24E0D32018FC0B3300C26B9B /* touchCircle_.png */,
+				24463FB119111754007EB77C /* touchCircle.png */,
+				24E0D31F18FC0B3300C26B9B /* touchPTK.sks */,
+			);
+			name = ImageRES;
+			sourceTree = "<group>";
+		};
+		24EDA88E191953E4004EFE8F /* Unit */ = {
+			isa = PBXGroup;
+			children = (
+				24A0ADCD190BE23D0018CC65 /* Player.h */,
+				24A0ADCE190BE23D0018CC65 /* Player.m */,
+				24EDA88F191959D9004EFE8F /* Bounder.h */,
+				24EDA890191959D9004EFE8F /* Bounder.m */,
+			);
+			name = Unit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,10 +294,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24463F9A19110BDC007EB77C /* player.png in Resources */,
+				24E0D32218FC0B3300C26B9B /* touchCircle_.png in Resources */,
 				244BAB4F18FA9BC0005AE1C9 /* InfoPlist.strings in Resources */,
+				24E0D32118FC0B3300C26B9B /* touchPTK.sks in Resources */,
 				244BAB6218FA9BC0005AE1C9 /* Images.xcassets in Resources */,
-				244BAB6018FA9BC0005AE1C9 /* Spaceship.png in Resources */,
 				244BAB5818FA9BC0005AE1C9 /* Main.storyboard in Resources */,
+				2441B91018FD174200867CA3 /* BakImage.png in Resources */,
+				24463FB219111754007EB77C /* touchCircle.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,10 +320,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24EDA891191959D9004EFE8F /* Bounder.m in Sources */,
 				244BAB5B18FA9BC0005AE1C9 /* DDangDDaMukgiViewController.m in Sources */,
-				244BAB5E18FA9BC0005AE1C9 /* DDangDDaMukgiMyScene.m in Sources */,
+				24E0D31C18FBFF1700C26B9B /* MainMenuScene.m in Sources */,
 				244BAB5118FA9BC0005AE1C9 /* main.m in Sources */,
 				244BAB5518FA9BC0005AE1C9 /* DDangDDaMukgiAppDelegate.m in Sources */,
+				24A0ADCF190BE23D0018CC65 /* Player.m in Sources */,
+				24506C721909380A00584FD7 /* PlayScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +535,7 @@
 				244BAB7A18FA9BC0005AE1C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		244BAB7B18FA9BC0005AE1C9 /* Build configuration list for PBXNativeTarget "DDangDDaMukgiTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +544,7 @@
 				244BAB7D18FA9BC0005AE1C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
