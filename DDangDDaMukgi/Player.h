@@ -17,4 +17,5 @@
 - (void)move:(NSNumber *)dt;                //Move!
 - (CGPathRef)createPathToMove;              //before moving, Make a path
 - (CGPoint)checkBoundaries:(CGPoint)point;  //Check bounder
+
 @end
