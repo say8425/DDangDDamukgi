@@ -107,12 +107,10 @@
     mapLayer.strokeColor = [UIColor yellowColor].CGColor;
     mapLayer.fillColor = nil;
 
-    //CGPathRef path =
-    
-     //After CODING Calling Mapping
-     //calling level in SCENE
-
-    
+    CGPathRef path = [fieldMap mappingPathToDraw];
+    mapLayer.path = path;
+    CGPathRelease(path);
+    [self.view.layer addSublayer:mapLayer];
 }
 
 - (void)update:(NSTimeInterval)currentTime {

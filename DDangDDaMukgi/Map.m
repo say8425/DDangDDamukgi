@@ -9,6 +9,7 @@
 #import "Map.h"
 
 @implementation Map
+
 - (id)initWithGameLevel:(int)level {
     if ((self = [super init])) {
         //MappingPoint Array ㅑnit

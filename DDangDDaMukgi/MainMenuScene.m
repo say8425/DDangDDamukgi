@@ -26,7 +26,7 @@
         titleLabel.fontName  = @"Gill Sans";
         titleLabel.position  = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMaxY(self.frame) * 0.8);
         [self addChild:titleLabel];
-        
+
         //Touch anywhere - 스타트
         SKLabelNode * startLabel = [SKLabelNode labelNodeWithFontNamed:@"Touch any where"];
         startLabel.text      = @"Touch any where";
@@ -82,7 +82,8 @@
         //Play Scene Load
         [self runAction:[SKAction runBlock:^{
             SKTransition *reveal = [SKTransition fadeWithDuration:2.0];
-            SKScene *playScene = [[PlayScene alloc]initWithSize:self.size];
+            SKScene *playScene = [[PlayScene alloc]initWithSize:self.size withGameLevel:1];
+            //SKScene *playScene = [[PlayScene alloc]initWithSize:self.size];
             [self.view presentScene:playScene transition:reveal];
         }]];
 
