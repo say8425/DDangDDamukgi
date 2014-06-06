@@ -36,6 +36,11 @@
     return self;
 }
 
+- (CGPoint)getPlayerPosiont {
+    CGPoint temp = CGPointMake(playerX, playerY);
+    return temp;
+}
+
 
 - (CGPathRef)mappingPathToDraw {
     CGMutablePathRef ref = CGPathCreateMutable();

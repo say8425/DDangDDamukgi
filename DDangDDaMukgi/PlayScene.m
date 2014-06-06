@@ -25,15 +25,15 @@
     if (self = [super initWithSize:size]) {
         self.backgroundColor = [UIColor greenColor];
 
-        Player *player = [[Player alloc]initWithImageNamed:@"player.png"];
-        player.name    = @"player";
-        player.position = CGPointMake(self.size.width / 2.0f, self.size.height / 2.0f);
-        [self addChild:player];
-
         fieldMap = [[Map alloc]initWithGameLevel:level];
         fieldMap.name = @"FieldMap";
         fieldMap.position = CGPointMake(CGPointZero.x, CGPointZero.y);
         [self addChild:fieldMap];
+
+        Player *player = [[Player alloc]initWithImageNamed:@"player.png"];
+        player.name    = @"player";
+        player.position = [fieldMap getPlayerPosiont];
+        [self addChild:player];
     } return self;
 }
 

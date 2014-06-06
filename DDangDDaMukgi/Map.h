@@ -15,6 +15,7 @@
 }
 
 - (id)initWithGameLevel:(int)level;
+- (CGPoint)getPlayerPosiont;
 - (CGPathRef)mappingPathToDraw;
 
 @end
