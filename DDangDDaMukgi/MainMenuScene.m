@@ -82,8 +82,7 @@
         //Play Scene Load
         [self runAction:[SKAction runBlock:^{
             SKTransition *reveal = [SKTransition fadeWithDuration:2.0];
-            SKScene *playScene = [[PlayScene alloc]initWithSize:self.size withGameLevel:1];
-            //SKScene *playScene = [[PlayScene alloc]initWithSize:self.size];
+            SKScene *playScene = [[PlayScene alloc]initWithSize:self.size withGameLevel:01];
             [self.view presentScene:playScene transition:reveal];
         }]];
 

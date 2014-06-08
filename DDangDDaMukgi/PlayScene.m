@@ -10,24 +10,13 @@
 
 @implementation PlayScene
 
-- (id)initWithSize:(CGSize)size {
-    if (self = [super initWithSize:size]) {
-        self.backgroundColor = [UIColor greenColor];
-        
-        Player *player = [[Player alloc]initWithImageNamed:@"player.png"];
-        player.name    = @"player";
-        player.position = CGPointMake(self.size.width / 2.0f, self.size.height / 2.0f);
-        [self addChild:player];
-    } return self;
-}
-
 - (id)initWithSize:(CGSize)size withGameLevel:(int)level {
     if (self = [super initWithSize:size]) {
-        self.backgroundColor = [UIColor greenColor];
+        self.backgroundColor = [UIColor grayColor];
 
         fieldMap = [[Map alloc]initWithGameLevel:level];
         fieldMap.name = @"FieldMap";
-        fieldMap.position = CGPointMake(CGPointZero.x, CGPointZero.y);
+        fieldMap.position = CGPointZero;
         [self addChild:fieldMap];
 
         Player *player = [[Player alloc]initWithImageNamed:@"player.png"];
@@ -83,7 +72,7 @@
         if ([layer.name isEqualToString:@"line"]) {
             [temp addObject:layer];
         }
-        if ([layer.name isEqualToString:@"map"]) {
+        if ([layer.name isEqualToString:@"fieldMap"]) {
             [temp addObject:layer];
         }
     }[temp makeObjectsPerformSelector:@selector(removeFromSuperlayer)];
@@ -92,7 +81,7 @@
     [self enumerateChildNodesWithName:@"player" usingBlock:^(SKNode *node, BOOL *stop) {
         CAShapeLayer *lineLayer = [CAShapeLayer layer];
         lineLayer.name = @"line";
-        lineLayer.strokeColor = [UIColor grayColor].CGColor;
+        lineLayer.strokeColor = [UIColor redColor].CGColor;
         lineLayer.fillColor = nil;
         
         CGPathRef path = [(Player *)node createPathToMove];
@@ -102,15 +91,15 @@
     }];
 
     //Map Bounder Drawed
-    CAShapeLayer *mapLayer = [CAShapeLayer layer];
-    mapLayer.name = @"map";
-    mapLayer.strokeColor = [UIColor yellowColor].CGColor;
-    mapLayer.fillColor = nil;
+    CAShapeLayer *fieldLayer = [CAShapeLayer layer];
+    fieldLayer.name = @"fieldMap";
+    fieldLayer.strokeColor = [UIColor yellowColor].CGColor;
+    fieldLayer.fillColor = nil;
 
     CGPathRef path = [fieldMap mappingPathToDraw];
-    mapLayer.path = path;
+    fieldLayer.path = path;
     CGPathRelease(path);
-    [self.view.layer addSublayer:mapLayer];
+    [self.view.layer addSublayer:fieldLayer];
 }
 
 - (void)update:(NSTimeInterval)currentTime {
@@ -120,6 +109,13 @@
     [self enumerateChildNodesWithName:@"player" usingBlock:^(SKNode *player, BOOL *stop) {
         [(Player *)player move:@(dt)];
     }];
+
+    if (CGRectContainsRect(fieldMap.frame, movingPlayer.frame)) {
+        NSLog(@"contains point:(%f, %f", movingPlayer.position.x, movingPlayer.position.y);
+    } else if (!CGRectContainsRect(fieldMap.frame, movingPlayer.frame)) {
+        NSLog(@"not contains point:(%f, %f", movingPlayer.position.x, movingPlayer.position.y);
+    }
+    NSLog(@"fieldMap height : %f",movingPlayer.frame.size.height);
 
     [self drawLines];   //훼이크임. 먼저 움직이고 난중에 선그림.
 }

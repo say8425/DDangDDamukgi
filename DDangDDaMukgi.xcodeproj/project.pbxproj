@@ -30,7 +30,7 @@
 		24506C721909380A00584FD7 /* PlayScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 24506C711909380A00584FD7 /* PlayScene.m */; };
 		247F630A19377CF400FA9181 /* Map.m in Sources */ = {isa = PBXBuildFile; fileRef = 247F630919377CF400FA9181 /* Map.m */; };
 		24A0ADCF190BE23D0018CC65 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A0ADCE190BE23D0018CC65 /* Player.m */; };
-		24A1135E193B1E6500E9595C /* Level01.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24A1135D193B1E6500E9595C /* Level01.plist */; };
+		24A1135E193B1E6500E9595C /* Level1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24A1135D193B1E6500E9595C /* Level1.plist */; };
 		24E0D31C18FBFF1700C26B9B /* MainMenuScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E0D31B18FBFF1700C26B9B /* MainMenuScene.m */; };
 		24E0D32118FC0B3300C26B9B /* touchPTK.sks in Resources */ = {isa = PBXBuildFile; fileRef = 24E0D31F18FC0B3300C26B9B /* touchPTK.sks */; };
 		24E0D32218FC0B3300C26B9B /* touchCircle_.png in Resources */ = {isa = PBXBuildFile; fileRef = 24E0D32018FC0B3300C26B9B /* touchCircle_.png */; };
@@ -80,7 +80,7 @@
 		247F630919377CF400FA9181 /* Map.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Map.m; sourceTree = "<group>"; };
 		24A0ADCD190BE23D0018CC65 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
 		24A0ADCE190BE23D0018CC65 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
-		24A1135D193B1E6500E9595C /* Level01.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Level01.plist; path = LevelData/Level01.plist; sourceTree = "<group>"; };
+		24A1135D193B1E6500E9595C /* Level1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Level1.plist; path = LevelData/Level1.plist; sourceTree = "<group>"; };
 		24E0D31A18FBFF1700C26B9B /* MainMenuScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuScene.h; sourceTree = "<group>"; };
 		24E0D31B18FBFF1700C26B9B /* MainMenuScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuScene.m; sourceTree = "<group>"; };
 		24E0D31F18FC0B3300C26B9B /* touchPTK.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = touchPTK.sks; sourceTree = "<group>"; };
@@ -197,7 +197,7 @@
 		24A1135F193B262A00E9595C /* Level */ = {
 			isa = PBXGroup;
 			children = (
-				24A1135D193B1E6500E9595C /* Level01.plist */,
+				24A1135D193B1E6500E9595C /* Level1.plist */,
 			);
 			name = Level;
 			sourceTree = "<group>";
@@ -293,6 +293,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = northPenguin;
 				TargetAttributes = {
+					244BAB3E18FA9BC0005AE1C9 = {
+						DevelopmentTeam = FS9C8D2C2M;
+					};
 					244BAB6618FA9BC0005AE1C9 = {
 						TestTargetID = 244BAB3E18FA9BC0005AE1C9;
 					};
@@ -330,7 +333,7 @@
 				244BAB5818FA9BC0005AE1C9 /* Main.storyboard in Resources */,
 				2441B91018FD174200867CA3 /* BakImage.png in Resources */,
 				24463FB219111754007EB77C /* touchCircle.png in Resources */,
-				24A1135E193B1E6500E9595C /* Level01.plist in Resources */,
+				24A1135E193B1E6500E9595C /* Level1.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,6 +486,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DDangDDaMukgi/DDangDDaMukgi-Prefix.pch";
 				INFOPLIST_FILE = "DDangDDaMukgi/DDangDDaMukgi-Info.plist";
@@ -497,6 +501,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DDangDDaMukgi/DDangDDaMukgi-Prefix.pch";
 				INFOPLIST_FILE = "DDangDDaMukgi/DDangDDaMukgi-Info.plist";

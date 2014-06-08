@@ -13,6 +13,8 @@
 @interface PlayScene : SKScene {
     Player         *movingPlayer;       //Holding a reference to the Plater that user wants to move
     Map            *fieldMap;
+    Map            *terriMap;
+    BOOL           terriBool;
     NSTimeInterval lastUpdateTime;      //Store a lastTime of last call to update:
     NSTimeInterval dt;                  //Store a time that between the two most recent
 }
