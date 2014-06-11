@@ -48,7 +48,9 @@
 
 
     if ([node.name isEqualToString:[NSString stringWithFormat:@"LevelBox%d", level]]) {
-        
+        SKTransition *reveal = [SKTransition fadeWithDuration:2.0];
+        SKScene *playScene = [[PlayScene alloc]initWithSize:self.size withGameLevel:level];
+        [self.view presentScene:playScene transition:reveal];
     }
 }
 

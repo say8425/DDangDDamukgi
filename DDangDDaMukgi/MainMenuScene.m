@@ -7,6 +7,7 @@
 //
 
 #import "MainMenuScene.h"
+#import "LevelScene.h"
 #import "PlayScene.h"
 #import "config.h"
 
@@ -59,8 +60,10 @@
 
         [self runAction:[SKAction runBlock:^{
             SKTransition *reveal = [SKTransition fadeWithDuration:2.0];
-            SKScene *playScene = [[PlayScene alloc]initWithSize:self.size withGameLevel:1];
-            [self.view presentScene:playScene transition:reveal];
+            SKScene *levelScene = [[LevelScene alloc]initWithSize:self.size];
+            [self.view presentScene:levelScene transition:reveal];
+//            SKScene *playScene = [[PlayScene alloc]initWithSize:self.size withGameLevel:1];
+//            [self.view presentScene:playScene transition:reveal];
         }]];
 
     }
