@@ -12,13 +12,13 @@
 
 @implementation MainMenuScene
 
--(id)initWithSize:(CGSize)size {
+- (id)initWithSize:(CGSize)size {
     if (self = [super initWithSize:size]) {
         //self.backgroundColor = [SKColor colorWithRed:0.65 green:0.98 blue:0.72 alpha:1.00];
         self.backgroundColor = [UIColor blackColor];
         red = arc4random()%255, green = arc4random()%255, blue = arc4random()%255;
         
-        //타이틀 라벨
+        //Title Label
         SKLabelNode *titleLabel = [SKLabelNode labelNodeWithFontNamed:@"DDang DDaMukgi"];
         titleLabel.text      = @"DDang DDaMukig";
         titleLabel.fontSize  = 84;
@@ -27,8 +27,8 @@
         titleLabel.position  = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMaxY(self.frame) * 0.8);
         [self addChild:titleLabel];
 
-        //Touch anywhere - 스타트
-        SKLabelNode * startLabel = [SKLabelNode labelNodeWithFontNamed:@"Touch any where"];
+        //Touch anywhere - startingGuide
+        SKLabelNode *startLabel = [SKLabelNode labelNodeWithFontNamed:@"Touch any where"];
         startLabel.text      = @"Touch any where";
         startLabel.fontSize  = 42;
         startLabel.fontColor = [UIColor lightGrayColor];
@@ -39,7 +39,7 @@
     return self;
 }
 
--(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     //Circle Effect
     for (UITouch *touch in touches) {
         CGPoint touchLoacation          = [touch locationInNode:self];
@@ -54,60 +54,22 @@
                                            ];
 
         [touchCircleSprite runAction:touchAction];
+        //test deleting this, and work well then delete this.
         [self addChild:touchCircleSprite];
-        NSLog(@"touched:%0.2f, %0.2f", touchLoacation.x, touchLoacation.y);
-        
-        /*[self runAction:[SKAction runBlock:^{
-            SKTransition *reveal = [SKTransition fadeWithDuration:2.0];
-            SKScene *playScene = [[PlayScene alloc]initWithSize:self.size];
-            [self.view presentScene:playScene transition:reveal];
-            }]
 
-//         // Configure the view.
-//         SKView *skView = (SKView *)self.view;
-//         skView.showsFPS = YES;
-//         skView.showsNodeCount = YES;
-//         
-//         // Create and configure the scene.
-//         SKScene *mainScene = [MainMenuScene sceneWithSize:skView.bounds.size];
-//         mainScene.scaleMode = SKSceneScaleModeAspectFill;
-//         
-//         // Present the scene.
-//         [skView presentScene:mainScene];
-         
-         
-         ];*/
-
-
-        //Play Scene Load
         [self runAction:[SKAction runBlock:^{
             SKTransition *reveal = [SKTransition fadeWithDuration:2.0];
-            SKScene *playScene = [[PlayScene alloc]initWithSize:self.size withGameLevel:01];
+            SKScene *playScene = [[PlayScene alloc]initWithSize:self.size withGameLevel:1];
             [self.view presentScene:playScene transition:reveal];
         }]];
 
     }
 }
 
--(void)update:(NSTimeInterval)currentTime {
-//    self.backgroundColor = [SKColor colorWithRed:red green:green blue:blue alpha:0.42];
-//    SKAction *bakChagAction = [SKAction colorizeWithColorBlendFactor:arc4random()%255 duration:4.2];
-//    [self.parent runAction:bakChagAction];
-    
-
-    //NSLog(@"%d %d %d",red,green,blue);
-
-}
 
 - (void)updateViewBackground {
     self.backgroundColor = [SKColor colorWithRed:red green:green blue:blue alpha:0.42];
-    //SKAction *bakChagAction = [SKAction colorizeWithColorBlendFactor:arc4random()%255 duration:4.2];
-    
-    //self.backgroundColor = [SKColor colorWithRed:red green:green blue:blue alpha:0.42];
-    
-    //SKAction *bakChagAction = [SKAction
-    
-//  [UIView beginAnimations:nil context:NULL];
+
     [UIView setAnimationDuration:4.2];
     int randomNumber = arc4random_uniform(255);
     self.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:

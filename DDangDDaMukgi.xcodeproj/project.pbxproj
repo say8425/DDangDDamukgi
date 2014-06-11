@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		242E2FF0192530E80024302B /* Mapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 242E2FEF192530E80024302B /* Mapping.m */; };
 		242E2FF2192530FB0024302B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 242E2FF1192530FB0024302B /* QuartzCore.framework */; };
+		2437F3D019446FAA0099055A /* Level1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2437F3CF19446FAA0099055A /* Level1.png */; };
+		2437F3D21944706A0099055A /* Level2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2437F3D11944706A0099055A /* Level2.png */; };
+		2437F3D41944A79B0099055A /* pragma.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2437F3D31944A79B0099055A /* pragma.swift */; };
 		2441B91018FD174200867CA3 /* BakImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 2441B90F18FD174200867CA3 /* BakImage.png */; };
 		24463F9A19110BDC007EB77C /* player.png in Resources */ = {isa = PBXBuildFile; fileRef = 24463F9919110BDC007EB77C /* player.png */; };
 		24463FB219111754007EB77C /* touchCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 24463FB119111754007EB77C /* touchCircle.png */; };
@@ -31,6 +34,7 @@
 		247F630A19377CF400FA9181 /* Map.m in Sources */ = {isa = PBXBuildFile; fileRef = 247F630919377CF400FA9181 /* Map.m */; };
 		24A0ADCF190BE23D0018CC65 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A0ADCE190BE23D0018CC65 /* Player.m */; };
 		24A1135E193B1E6500E9595C /* Level1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24A1135D193B1E6500E9595C /* Level1.plist */; };
+		24B42FDC194781D600376852 /* LevelScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 24B42FDB194781D600376852 /* LevelScene.m */; };
 		24E0D31C18FBFF1700C26B9B /* MainMenuScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E0D31B18FBFF1700C26B9B /* MainMenuScene.m */; };
 		24E0D32118FC0B3300C26B9B /* touchPTK.sks in Resources */ = {isa = PBXBuildFile; fileRef = 24E0D31F18FC0B3300C26B9B /* touchPTK.sks */; };
 		24E0D32218FC0B3300C26B9B /* touchCircle_.png in Resources */ = {isa = PBXBuildFile; fileRef = 24E0D32018FC0B3300C26B9B /* touchCircle_.png */; };
@@ -50,6 +54,9 @@
 		242E2FEE192530E80024302B /* Mapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mapping.h; sourceTree = "<group>"; };
 		242E2FEF192530E80024302B /* Mapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mapping.m; sourceTree = "<group>"; };
 		242E2FF1192530FB0024302B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		2437F3CF19446FAA0099055A /* Level1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Level1.png; sourceTree = "<group>"; };
+		2437F3D11944706A0099055A /* Level2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Level2.png; sourceTree = "<group>"; };
+		2437F3D31944A79B0099055A /* pragma.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pragma.swift; sourceTree = "<group>"; };
 		2441B90F18FD174200867CA3 /* BakImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BakImage.png; sourceTree = "<group>"; };
 		24463F98191104D4007EB77C /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
 		24463F9919110BDC007EB77C /* player.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player.png; sourceTree = "<group>"; };
@@ -81,6 +88,8 @@
 		24A0ADCD190BE23D0018CC65 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
 		24A0ADCE190BE23D0018CC65 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 		24A1135D193B1E6500E9595C /* Level1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Level1.plist; path = LevelData/Level1.plist; sourceTree = "<group>"; };
+		24B42FDA194781D600376852 /* LevelScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelScene.h; sourceTree = "<group>"; };
+		24B42FDB194781D600376852 /* LevelScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelScene.m; sourceTree = "<group>"; };
 		24E0D31A18FBFF1700C26B9B /* MainMenuScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuScene.h; sourceTree = "<group>"; };
 		24E0D31B18FBFF1700C26B9B /* MainMenuScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuScene.m; sourceTree = "<group>"; };
 		24E0D31F18FC0B3300C26B9B /* touchPTK.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = touchPTK.sks; sourceTree = "<group>"; };
@@ -116,6 +125,7 @@
 		244BAB3618FA9BC0005AE1C9 = {
 			isa = PBXGroup;
 			children = (
+				2437F3D31944A79B0099055A /* pragma.swift */,
 				244BAB4A18FA9BC0005AE1C9 /* DDangDDaMukgi */,
 				244BAB6E18FA9BC0005AE1C9 /* DDangDDaMukgiTests */,
 				244BAB4118FA9BC0005AE1C9 /* Frameworks */,
@@ -197,6 +207,8 @@
 		24A1135F193B262A00E9595C /* Level */ = {
 			isa = PBXGroup;
 			children = (
+				2437F3CF19446FAA0099055A /* Level1.png */,
+				2437F3D11944706A0099055A /* Level2.png */,
 				24A1135D193B1E6500E9595C /* Level1.plist */,
 			);
 			name = Level;
@@ -216,6 +228,8 @@
 		24E0D31D18FC0AD100C26B9B /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				24B42FDA194781D600376852 /* LevelScene.h */,
+				24B42FDB194781D600376852 /* LevelScene.m */,
 				24E0D31A18FBFF1700C26B9B /* MainMenuScene.h */,
 				24E0D31B18FBFF1700C26B9B /* MainMenuScene.m */,
 				24506C701909380A00584FD7 /* PlayScene.h */,
@@ -329,8 +343,10 @@
 				24E0D32218FC0B3300C26B9B /* touchCircle_.png in Resources */,
 				244BAB4F18FA9BC0005AE1C9 /* InfoPlist.strings in Resources */,
 				24E0D32118FC0B3300C26B9B /* touchPTK.sks in Resources */,
+				2437F3D019446FAA0099055A /* Level1.png in Resources */,
 				244BAB6218FA9BC0005AE1C9 /* Images.xcassets in Resources */,
 				244BAB5818FA9BC0005AE1C9 /* Main.storyboard in Resources */,
+				2437F3D21944706A0099055A /* Level2.png in Resources */,
 				2441B91018FD174200867CA3 /* BakImage.png in Resources */,
 				24463FB219111754007EB77C /* touchCircle.png in Resources */,
 				24A1135E193B1E6500E9595C /* Level1.plist in Resources */,
@@ -353,10 +369,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				244BAB5B18FA9BC0005AE1C9 /* DDangDDaMukgiViewController.m in Sources */,
+				24B42FDC194781D600376852 /* LevelScene.m in Sources */,
 				24E0D31C18FBFF1700C26B9B /* MainMenuScene.m in Sources */,
 				244BAB5118FA9BC0005AE1C9 /* main.m in Sources */,
 				242E2FF0192530E80024302B /* Mapping.m in Sources */,
 				244BAB5518FA9BC0005AE1C9 /* DDangDDaMukgiAppDelegate.m in Sources */,
+				2437F3D41944A79B0099055A /* pragma.swift in Sources */,
 				24A0ADCF190BE23D0018CC65 /* Player.m in Sources */,
 				247F630A19377CF400FA9181 /* Map.m in Sources */,
 				24506C721909380A00584FD7 /* PlayScene.m in Sources */,
@@ -486,12 +504,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DDangDDaMukgi/DDangDDaMukgi-Prefix.pch";
 				INFOPLIST_FILE = "DDangDDaMukgi/DDangDDaMukgi-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -501,10 +522,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DDangDDaMukgi/DDangDDaMukgi-Prefix.pch";
 				INFOPLIST_FILE = "DDangDDaMukgi/DDangDDaMukgi-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				WRAPPER_EXTENSION = app;

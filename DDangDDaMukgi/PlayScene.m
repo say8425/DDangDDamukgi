@@ -14,10 +14,14 @@
     if (self = [super initWithSize:size]) {
         self.backgroundColor = [UIColor grayColor];
 
-        fieldMap = [[Map alloc]initWithGameLevel:level];
+        fieldMap = [[Map alloc]initWithImageNamed:[NSString stringWithFormat:@"Level%d.png", level]];
+        //fieldMap = [[Map alloc]initWithGameLevel:level];
         fieldMap.name = @"FieldMap";
-        fieldMap.position = CGPointZero;
+        fieldMap.anchorPoint = CGPointZero;
+        fieldMap.position = CGPointMake(42, 56);
         [self addChild:fieldMap];
+
+
 
         Player *player = [[Player alloc]initWithImageNamed:@"player.png"];
         player.name    = @"player";
@@ -91,15 +95,15 @@
     }];
 
     //Map Bounder Drawed
-    CAShapeLayer *fieldLayer = [CAShapeLayer layer];
-    fieldLayer.name = @"fieldMap";
-    fieldLayer.strokeColor = [UIColor yellowColor].CGColor;
-    fieldLayer.fillColor = nil;
+    //CAShapeLayer *fieldLayer = [CAShapeLayer layer];
+    //fieldLayer.name = @"fieldMap";
+    //fieldLayer.strokeColor = [UIColor yellowColor].CGColor;
+    //fieldLayer.fillColor = nil;
 
-    CGPathRef path = [fieldMap mappingPathToDraw];
-    fieldLayer.path = path;
-    CGPathRelease(path);
-    [self.view.layer addSublayer:fieldLayer];
+    //CGPathRef path = [fieldMap mappingPathToDraw];
+    //fieldLayer.path = path;
+    //CGPathRelease(path);
+    //[self.view.layer addSublayer:fieldLayer];
 }
 
 - (void)update:(NSTimeInterval)currentTime {
@@ -110,12 +114,14 @@
         [(Player *)player move:@(dt)];
     }];
 
+
+
     if (CGRectContainsRect(fieldMap.frame, movingPlayer.frame)) {
         NSLog(@"contains point:(%f, %f", movingPlayer.position.x, movingPlayer.position.y);
     } else if (!CGRectContainsRect(fieldMap.frame, movingPlayer.frame)) {
         NSLog(@"not contains point:(%f, %f", movingPlayer.position.x, movingPlayer.position.y);
     }
-    NSLog(@"fieldMap height : %f",movingPlayer.frame.size.height);
+    NSLog(@"fieldMap height : %f",fieldMap.frame.size.height);
 
     [self drawLines];   //훼이크임. 먼저 움직이고 난중에 선그림.
 }

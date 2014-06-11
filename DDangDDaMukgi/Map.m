@@ -8,7 +8,16 @@
 
 #import "Map.h"
 
+
 @implementation Map
+- (id)initWithImageNamed:(NSString *)name {
+    if (self = [super initWithImageNamed:name]) {
+        playerX = 10;
+        playerY = 10;
+    }return self;
+}
+
+#pragma mark -
 
 - (id)initWithGameLevel:(int)level {
     if ((self = [super init])) {
